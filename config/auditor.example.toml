@@ -1,0 +1,32 @@
+[bitrix]
+webhook_env = "BITRIX24_WEBHOOK_URL"
+timeout_seconds = 30
+max_retries = 4
+# Recomendado: limita o webhook ao portal esperado.
+allowed_hosts = ["sua-conta.bitrix24.com.br"]
+
+[audit]
+timezone = "America/Sao_Paulo"
+include_closed = true
+stale_after_hours = 168
+due_soon_hours = 24
+incremental_overlap_minutes = 5
+checkpoint_path = ".state/checkpoint.json"
+spool_path = ".state/tasks.ndjson"
+output_directory = "output"
+
+# Cada papel pode conter IDs de usuários. Lista vazia significa que o papel
+# será inferido diretamente dos campos das tarefas, sem restringir usuários.
+[roles]
+responsible = []
+creator = []
+accomplice = []
+auditor = []
+
+# Campos personalizados são opcionais. "required_for" aceita os papéis acima.
+[[custom_fields]]
+id = "UF_AUTO_EXAMPLE"
+label = "Campo de exemplo"
+required_for = ["responsible"]
+export = true
+

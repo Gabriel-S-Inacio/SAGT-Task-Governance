@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitrix24-task-auditor"
+version = "1.3.0"
+description = "SAGT — auditoria e governança de tarefas integrada ao Bitrix24"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Gabriel Santos Inácio" },
+]
+dependencies = [
+    "streamlit>=1.40,<2",
+    "openpyxl>=3.1,<4",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+test = []
+
+[project.scripts]
+bitrix24-task-auditor = "bitrix24_task_auditor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
