@@ -4,7 +4,7 @@ Python • Streamlit • Bitrix24 REST • Auditoria • Governança operacional
 
 Sistema de auditoria e governança de tarefas integrado ao Bitrix24, com rastreabilidade de vínculos, automação de processos operacionais e migração supervisionada de responsabilidades.
 
-[Sobre](#sobre-o-projeto) · [Arquitetura](#arquitetura) · [Funcionalidades](#funcionalidades) · [Segurança](#segurança-e-integridade) · [Instalação](#instalação-e-execução) · [Documentação](#documentação-complementar)
+[Sobre](#sobre-o-projeto) · [Problema](#problema-que-resolve) · [Arquitetura](#arquitetura) · [Funcionalidades](#funcionalidades) · [Segurança](#segurança-e-integridade) · [Demonstração](#demonstração) · [Instalação](#instalação-e-execução) · [Documentação](#documentação-complementar) · [Confidencialidade](#confidencialidade)
 
 ---
 
@@ -144,29 +144,39 @@ Como capacidade técnica, o SAGT entrega quatro benefícios:
 
 ## Demonstração
 
-### 1. Dashboard
+As capturas abaixo apresentam os principais fluxos do SAGT. A sequência visual completa de configuração, acompanhamento, inventário, prévia e validação está disponível na documentação técnica de cada frente.
+
+### Auditoria e governança
+
+#### Dashboard
 
 ![Dashboard do SAGT com estado da conexão e indicadores da auditoria](assets/screenshots/public/01-dashboard-anonimizado.png)
 
 *Visão geral do ambiente local, do modo read-only e do volume consolidado pela auditoria.*
 
-### 2. Resultados da auditoria
+#### Resultados e inventário
 
 ![Resultados consolidados da auditoria por tarefa, vínculo e papel](assets/screenshots/public/04-resultados-auditoria-anonimizado.png)
 
-*Indicadores de tarefas, vínculos, papéis e cobertura da execução selecionada.*
+*Indicadores de tarefas, vínculos, papéis e cobertura da execução selecionada, com acesso ao inventário consolidado.*
 
-### 3. Regras condicionais
+[Ver configuração, acompanhamento, resultados e exportação da auditoria](docs/auditoria.md)
+
+### Migração supervisionada
+
+#### Gerenciador de regras
 
 ![Gerenciador de regras condicionais da migração supervisionada](assets/screenshots/public/06-gerenciador-regras-anonimizado.png)
 
 *Regras configuráveis para delimitar origem, destino, operação e condição adicional.*
 
-### 4. Execução supervisionada
+#### Validação e autorização
 
 ![Confirmação e verificação da migração supervisionada](assets/screenshots/public/08-validacao-migracao-anonimizada.png)
 
-*Autorização vinculada ao plano e consolidação dos resultados da verificação posterior.*
+*Autorização vinculada ao plano, execução condicionada e consolidação dos resultados da verificação posterior.*
+
+[Ver regras, prévia, execução e verificação da migração supervisionada](docs/migracao-supervisionada.md)
 
 As capturas preservam os componentes e indicadores funcionais, com anonimização pontual de identificadores rastreáveis. Não são usadas imagens fictícias.
 
@@ -313,9 +323,9 @@ Auditoria offline a partir de dados locais:
 
 ## Confidencialidade
 
-Dados operacionais, credenciais, webhooks, relatórios reais, checkpoints, logs e configurações privadas não integram o repositório público. Exemplos usam apenas placeholders.
+Este repositório público contém o código-fonte e a documentação técnica do SAGT como case de portfólio. Credenciais, webhooks, configurações privadas, relatórios operacionais, checkpoints, logs e dados de auditorias reais não fazem parte do conteúdo versionado; os exemplos usam apenas placeholders e as capturas publicadas foram anonimizadas.
 
-Este projeto ainda não possui licença de distribuição definida. A autorização de publicação e a licença devem ser confirmadas pelo titular antes de disponibilizar o repositório publicamente.
+A publicação do código não implica autorização irrestrita para reutilização ou redistribuição nem concede acesso a ambientes institucionais. A disponibilidade pública do repositório também não substitui eventuais autorizações de titularidade ou distribuição aplicáveis.
 
 ---
 
