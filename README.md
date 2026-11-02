@@ -4,7 +4,7 @@ Python • Streamlit • Bitrix24 REST • Auditoria • Governança operacional
 
 Sistema de auditoria e governança de tarefas integrado ao Bitrix24, com rastreabilidade de vínculos, automação de processos operacionais e migração supervisionada de responsabilidades.
 
-[Sobre](#sobre-o-projeto) · [Problema](#problema-que-resolve) · [Arquitetura](#arquitetura) · [Funcionalidades](#funcionalidades) · [Segurança](#segurança-e-integridade) · [Demonstração](#demonstração) · [Instalação](#instalação-e-execução) · [Documentação](#documentação-complementar) · [Confidencialidade](#confidencialidade)
+[Sobre](#sobre-o-projeto) · [Problema](#problema-que-resolve) · [Arquitetura](#arquitetura) · [Funcionalidades](#funcionalidades) · [Segurança](#segurança-e-integridade) · [Demonstração](#demonstração) · [Instalação](#instalação-e-execução) · [Documentação](#documentação-complementar) · [Licença](#licença) · [Confidencialidade](#confidencialidade)
 
 ---
 
@@ -321,11 +321,19 @@ Auditoria offline a partir de dados locais:
 
 ---
 
+## Licença
+
+O código-fonte e a documentação técnica deste repositório são disponibilizados sob a [licença MIT](LICENSE). Ela permite uso, cópia, modificação, publicação e redistribuição, inclusive para fins comerciais, desde que o aviso de direitos autorais e o texto da licença sejam preservados nas cópias ou porções substanciais do software.
+
+A licença MIT não concede direitos sobre dados corporativos, credenciais, marcas de terceiros, informações confidenciais ou materiais que não integrem o conteúdo licenciado deste repositório.
+
+---
+
 ## Confidencialidade
 
 Este repositório público contém o código-fonte e a documentação técnica do SAGT como case de portfólio. Credenciais, webhooks, configurações privadas, relatórios operacionais, checkpoints, logs e dados de auditorias reais não fazem parte do conteúdo versionado; os exemplos usam apenas placeholders e as capturas publicadas foram anonimizadas.
 
-A publicação do código não implica autorização irrestrita para reutilização ou redistribuição nem concede acesso a ambientes institucionais. A disponibilidade pública do repositório também não substitui eventuais autorizações de titularidade ou distribuição aplicáveis.
+A disponibilidade pública do repositório e a licença do código não concedem acesso a ambientes institucionais nem autorização sobre dados, sistemas ou marcas de terceiros.
 
 ---
 
